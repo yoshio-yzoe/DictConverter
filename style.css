@@ -1,0 +1,25 @@
+/* レイアウト --------------------------------------------------*/
+html,body{margin:0;padding:0;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",sans-serif;}
+.container{max-width:960px;margin:auto;padding:1rem;}
+.panes{display:flex;flex-wrap:wrap;gap:1rem;margin-top:1rem;}
+.pane{flex:1 1 400px;min-width:280px;}
+
+textarea{width:100%;box-sizing:border-box;font:inherit;padding:.5rem;border:1px solid #ccc;border-radius:.25rem;resize:vertical;min-height:240px;}
+/* ボタン ------------------------------------------------------*/
+.button,button{display:inline-block;padding:.5rem 1.2rem;border:1px solid #0077cc;border-radius:.3rem;background:#0077cc;color:#fff;text-decoration:none;cursor:pointer;font-size:1rem;transition:background .2s;}
+.button:hover,button:hover{background:#005fa3;}
+.primary{background:#28a745;border-color:#28a745;}
+.primary:hover{background:#208638;}
+/* その他 ------------------------------------------------------*/
+fieldset{margin-top:1rem;border:1px solid #ccc;padding:.5rem 1rem;}
+legend{padding:0 .5rem;}
+.upload .hint{margin:.3rem 0 0;font-size:.85rem;color:#666;}
+.actions{margin-top:1rem;display:flex;gap:.5rem;flex-wrap:wrap;}
+@media (prefers-color-scheme:dark){
+  body{background:#121212;color:#e0e0e0;}
+  textarea{background:#1e1e1e;border-color:#555;color:#e0e0e0;}
+  .button,button{border-color:#2994ff;background:#2994ff;}
+  .button:hover,button:hover{background:#0f7de0;}
+  .primary{background:#34c759;border-color:#34c759;}
+  .primary:hover{background:#28a745;}
+}

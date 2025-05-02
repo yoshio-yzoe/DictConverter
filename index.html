@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>辞書変換ツール</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main class="container">
+    <h1>辞書変換ツール<br /><small>Google 日本語 ↔ macOS ユーザー辞書</small></h1>
+
+    <section class="upload">
+      <input type="file" id="fileInput" accept=".txt,.plist" hidden />
+      <label for="fileInput" class="button">ファイルを選択</label>
+      <p class="hint">または下のテキストボックスに直接貼り付けてください</p>
+    </section>
+
+    <fieldset class="options">
+      <legend>変換方向</legend>
+      <label><input type="radio" name="mode" value="IME2MAC" checked /> IME → Mac (plist)</label>
+      <label><input type="radio" name="mode" value="MAC2IME" /> Mac (plist) → IME</label>
+    </fieldset>
+
+    <section class="panes">
+      <div class="pane">
+        <h2>入力</h2>
+        <textarea id="inputText" rows="18" placeholder="エクスポートした辞書をここに貼り付け"></textarea>
+      </div>
+      <div class="pane">
+        <h2>出力</h2>
+        <textarea id="outputText" rows="18" readonly></textarea>
+      </div>
+    </section>
+
+    <section class="actions">
+      <button id="convertBtn" class="primary">変換</button>
+      <button id="copyBtn">コピー</button>
+      <a id="downloadLink" class="button" download="">ダウンロード</a>
+    </section>
+  </main>
+
+  <script src="convert.js"></script>
+</body>
+</html>
