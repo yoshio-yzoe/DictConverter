@@ -41,7 +41,7 @@
 ---
 
 ## 使い方
-GitHub Pagesから直接利用可能。以下はローカルで実行する手順
+[GitHub Pages](https://yoshio-yzoe.github.io/DictConverter/)から直接利用可能。以下はローカルで実行する手順
 
 1. **ダウンロード / クローン**
 
