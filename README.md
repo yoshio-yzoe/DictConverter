@@ -42,8 +42,6 @@
 ## 使い方
 [GitHub Pages](https://yoshio-yzoe.github.io/DictConverter/)から直接利用可能。
 
-以下はローカルで実行する手順
-
 1. **入力**  
    - ファイルを選択するか、テキストボックスに貼り付けます。 
    - ドラッグ＆ドロップにも対応。
